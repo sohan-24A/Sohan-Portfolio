@@ -29,6 +29,9 @@
     cursor: pointer;
 
 }
+.text-center{
+    text-align: center;
+}
 
 
 /* main style */
@@ -36,9 +39,14 @@ header {
     background-color: #FFF8F3;
     background: url("../images/developer.png"), #FFF8F3;
     background-repeat: no-repeat;
-    background-position: top left;
-    background-size: contain;
-
+    background-position: 30px 20px ,top left ;
+    /* background-size: contain; */
+    padding-top: 50px;
+      display: flex;
+    flex-direction: column;
+    height: 800px;
+    
+    
 }
 
 nav {
@@ -46,6 +54,7 @@ nav {
     max-width: 1140px;
     margin: 0 auto;
     display: flex;
+    /* padding-top: 20px; */
     justify-content: space-between;
     align-items: center;
 }
@@ -69,12 +78,14 @@ nav .menu a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+height: 100%;
 }
 
 #banner .banner-content {
     max-width: 585px;
+    height: 100%;
 }
+
 
 #banner .banner-content h2 {
     font-size: 45px;
@@ -103,11 +114,14 @@ nav .menu a {
     background-position: bottom center;
     background-size: contain;
     background-repeat: no-repeat;
+    
+    height: 100%;
 }
 
 #banner .banner-img img {
     max-width: 585px;
     vertical-align: middle;
+   margin-top: 93px;
 
 }
 
@@ -247,4 +261,43 @@ nav .menu a {
 .resume-container hr {
     color: #D1D1D1;
     margin: 30px 0;
+}
+footer {
+    margin-top: 130px;
+    background-color: #FFF8F3;
+    padding: 130px 0;
+}
+
+footer .footer-container {
+    width: 71%;
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    gap: 16px;
+
+}
+footer .footer-container .social{
+    max-width: 512px;
+
+}
+.footer-container h2 {
+    font-size: 35px;
+    color: #181818;
+    margin-bottom: 20px;
+}
+.footer-container .social p {
+    color: #474747;
+    line-height: 28px;
+    margin-bottom: 30px;
+}
+.footer-container .icons a {
+    margin-right: 24px;
+
+}
+.footer-container form input[type="text"],.footer-container form textarea {
+width: 461px;
+padding: 18px 31px;
+margin-bottom: 24px;
+color: #757575;
+border-radius: 5px;
 }
